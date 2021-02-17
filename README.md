@@ -16,9 +16,8 @@ Code architecture/lead programmer:
 Framework, components, coding style. Doesn't mean the only programmer! Everyone must program, lead programmer decides on the overall design and coding standards.</br></br>
 Testing lead: 
 Setup testing framework and conventions. Use continuous integration to test at each commit/push. Everyone must do their own testing!</br>
-
-                  
-                
-
-
-
+2. NICHOLAS PORTER </br>
+UI/UX design:
+User Interface and User eXperience. Make mock UI designs and user-friendly navigation.
+Client liaison: 
+Communications, demos, and negotiations with client, what was done and planned to handle client's requirements (minor role; should be combined with other role, such as manager)
