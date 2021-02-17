@@ -11,7 +11,7 @@ https://jira.ggc.edu/secure/RapidBoard.jspa?rapidView=77&projectKey=SCHEDULER
 MSTeams and Google Docs
 
 **TEAM MEMBERS**</br>
-1. DJ BOOKER -</br> 
+1. DJ BOOKER</br> 
 Code architecture/lead programmer: 
 Framework, components, coding style. Doesn't mean the only programmer! Everyone must program, lead programmer decides on the overall design and coding standards.</br></br>
 Testing lead: 
