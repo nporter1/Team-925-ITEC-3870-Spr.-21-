@@ -11,20 +11,20 @@ https://jira.ggc.edu/secure/RapidBoard.jspa?rapidView=77&projectKey=SCHEDULER
 MSTeams and Google Docs
 
 **TEAM MEMBERS**</br>
-1. ***DJ BOOKER***</br> 
-Code architecture/lead programmer: 
-Framework, components, coding style. Doesn't mean the only programmer! Everyone must program, lead programmer decides on the overall design and coding standards.</br></br>
-Testing lead: 
-Setup testing framework and conventions. Use continuous integration to test at each commit/push. Everyone must do their own testing!</br></br>
-2. ***NICHOLAS PORTER*** </br>
-UI/UX design:
-User Interface and User experience. Make mock UI designs and user-friendly navigation.</br></br>
-Client liaison: 
-Communications, demos, and negotiations with client, what was done and planned to handle client's requirements (minor role; should be combined with other role, such as manager)</br></br>
-3. ***AYESHA SYEDA*** </br>
-Team manager: 
-Sprint planning, and time accounting for the team.</br></br>
-Documentation lead:
-Setup documentation conventions for code and project, then delegate work onto teammates. Manage presentations, reports, and licensing documentation.</br></br>
-Data modeler: 
-Database, data files, server-client structure, data structures.
+1. **DJ BOOKER**</br> 
+**Code architecture/lead programmer**: 
+*Framework, components, coding style. Doesn't mean the only programmer! Everyone must program, lead programmer decides on the overall design and coding standards.*</br></br>
+**Testing lead**: 
+*Setup testing framework and conventions. Use continuous integration to test at each commit/push. Everyone must do their own testing!*</br></br>
+2. **NICHOLAS PORTER** </br>
+**UI/UX design**:
+*User Interface and User experience. Make mock UI designs and user-friendly navigation.*</br></br>
+**Client liaison**: 
+*Communications, demos, and negotiations with client, what was done and planned to handle client's requirements (minor role; should be combined with other role, such as manager)*</br></br>
+3. **AYESHA SYEDA** </br>
+**Team manager**: 
+*Sprint planning, and time accounting for the team.*</br></br>
+**Documentation lead**:
+*Setup documentation conventions for code and project, then delegate work onto teammates. Manage presentations, reports, and licensing documentation.*</br></br>
+**Data modeler**: 
+*Database, data files, server-client structure, data structures.*
