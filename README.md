@@ -21,3 +21,10 @@ UI/UX design:
 User Interface and User eXperience. Make mock UI designs and user-friendly navigation.</br></br>
 Client liaison: 
 Communications, demos, and negotiations with client, what was done and planned to handle client's requirements (minor role; should be combined with other role, such as manager)
+3. AYESHA SYEDA </br>
+Team manager: 
+Sprint planning, and time accounting for the team.</br></br>
+Documentation lead:
+Setup documentation conventions for code and project, then delegate work onto teammates. Manage presentations, reports, and licensing documentation.</br></br>
+Data modeler: 
+Database, data files, server-client structure, data structures.
