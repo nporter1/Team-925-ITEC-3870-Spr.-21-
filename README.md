@@ -21,6 +21,8 @@ MSTeams and Google Docs
 *User Interface and User experience. Make mock UI designs and user-friendly navigation.*</br></br>
 **Client liaison**: 
 *Communications, demos, and negotiations with client, what was done and planned to handle client's requirements (minor role; should be combined with other role, such as manager)*</br></br>
+**Assistant for both Code Architecture & Data Modeler**
+*I will be assissting both Darien Booker and Ayesha Syeda in the coding and data modeling parts of the program*
 3. **AYESHA SYEDA** </br>
 **Team manager**: 
 *Sprint planning, and time accounting for the team.*</br></br>
