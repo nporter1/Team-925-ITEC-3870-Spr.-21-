@@ -13,7 +13,7 @@ MSTeams and Google Docs
 **TEAM MEMBERS**</br>
 1. **DJ BOOKER**</br> 
 **Code architecture/lead programmer**: 
-*Framework, components, coding style. Doesn't mean the only programmer! Everyone must program, lead programmer decides on the overall design and coding standards.*</br></br>
+*Framework, components, coding style. Decides on the overall design and coding standards.*</br></br>
 **Testing lead**: 
 *Setup testing framework and conventions. Use continuous integration to test at each commit/push. Everyone must do their own testing!*</br></br>
 2. **NICHOLAS PORTER** </br>
