@@ -1,0 +1,143 @@
+Database Dictionary:
+
+	#Remember, LDAP is the set-in-stone/correct table#
+	--------------------------------------------------
+	
+	>LDAP Table
+		-FIRST_NAME
+			=First name of the employee
+			=VARCHAR(50)
+		-LAST_NAME
+			=Last name of the employee
+			=VARCHAR(50)
+		-PPID
+			=Starts w/ "P", followed by 7 numbers
+			=VARCHAR(50)
+		-EMAIL
+			=Email of the employee
+				+Format: (FIRST_NAME).(LAST_NAME)_(random number)@EMORY.EDU
+			=VARCHAR(200)
+		-NETID
+			=First two letters of first name plus full last name
+			=*Will be compared against USERNAME in Training
+			=VARCHAR(50)
+
+	#For Training Table's dictionary:#
+	----------------------------------
+	*Used in LDAP Table
+	**Used in Exception Table
+	***Used in both other tables
+
+	>Training Table
+		-CEUS_EARNED
+			=Not important, every record is null
+			=BIGINT
+		-COURSE_ID**
+			=Random format:
+				+Some are numbers in 6-8 digit range
+				+Some have numbers & letters included, very long
+			=VARCHAR(50)
+		-COURSE_TITLE**
+			=Format:
+				+Four-letter abbreviation of something (I.e. "CITI", "ELMS")
+				+Followed by two dashes and full title of course
+			=VARCHAR(200)
+		-DATE_COURSE_COMPLETED**
+			=Format: "DD-MON-YY HH.MM.SS.Milisecs... (AM or PM)"
+			=VARCHAR(50)
+		-EMAIL***
+			=Format:
+				+Format: "(FIRST_NAME).(LAST_NAME)_(random number)@EMORY.EDU"
+			=VARCHAR(200)
+		-EMPLOYEE_ID_NUMBER**
+			=Starts w/ "P", followed by 7 numbers
+			=VARCHAR(100)
+		-EXAM_PASS_DATE
+			=Format: "DD-MON-YY HH.MM.SS.Milisecs... (AM or PM)"
+			=VARCHAR(50)
+		-FIRST_NAME***
+			=First name of the employee
+			=VARCHAR(200)
+		-LAST_NAME***
+			=Last name of the employee
+			=VARCHAR(200)
+		-MEMBER_ID**
+			=Random format:
+				+Some are just "Z010Z01"
+				+Some are similar to USERNAME (but may vary slightly)
+			=VARCHAR(100)
+		-PASSING_SCORE
+			=Most are null, handful have value of 80
+			=BIGINT
+		-PPID***
+			=Starts w/ "P", followed by several numbers
+				+Some records have extra zero added on at the end
+			=VARCHAR(40)
+		-REGISTRATION_DATE
+			=Format: "DD-MON-YY HH.MM.SS.Milisecs... (AM or PM)"
+			=VARCHAR(50)
+		-USERNAME***
+			=First two letters of first name plus full last name
+			=*Will be compared againse NETID in LDAP
+			=VARCHAR(200)
+		-AUTOLOGIN_ID
+			=Starts w/ "P", followed by ~7 numbers
+			=VARCHAR(40)
+		-TRAINING_SOURCE**
+			=Short abbreviated string of something
+				+Similar to beginnig of COURSE_ID
+			=VARCHAR(20)
+		-ACTIVE
+			=Not important; every value seems to be just "1"
+			=TINYINT(1)
+		-LAST_MOD_DATE
+			=Format: "DD-MON-YY HH.MM.SS.Milisecs... (AM or PM)"
+			=VARCHAR(50)
+		-LAST_MOD_OPERATOR
+			=Not important; every value seems to be "CRON_JOB"
+			=VARCHAR(100)
+		-LAST_MOD_ACTION
+			=Not important; every value seems to be "ADD"
+			=VARCHAR(20)
+		-TRAINING_REC_ID**
+			=Important, but every value is similar
+				+Some are "2.02011e26", others are "2.01912e26"
+			=FLOAT
+		-TRAINING_TARGET
+			=Not important; every value is similar
+				+Some are "IACUC", others are "ALL"
+			=VARCHAR(20)
+		-EXPIRATION_DATE
+			=Format: "DD-MON-YY HH.MM.SS.%Milli% (AM/PM)"
+			=VARCHAR(50)
+
+	#For format/descriptions, check LDAP/Training entries#
+	------------------------------------------------------	
+
+	>Exception Table
+		-URID
+			=FLOAT
+		-COURSE_ID
+			=VARCHAR(50)
+		-COURSE_TITLE
+			=VARCHAR(200)
+		-DATE_COURSE_COMPLETED
+			=VARCHAR(50)
+		-EMAIL
+			=VARCHAR(200)
+		-FIRST_NAME
+			=VARCHAR(50)
+		-LAST_NAME
+			=VARCHAR(50)
+		-MEMBER_ID
+			=VARCHAR(100)
+		-PPID
+			=VARCHAR(40)
+		-USERNAME
+			=VARCHAR(200)
+		-TRAINING_SOURCE
+			=VARCHAR(20)
+		-TRAINING_REC_ID
+			=FLOAT
+		-Exception_Reason
+			=VARCHAR(200)

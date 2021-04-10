@@ -1,0 +1,23 @@
+*(UNIQUE FIELD) will be most unique feild that is in both LDAP and TRAINING
+*Preferably PPID
+
+-for each record in TRAINING...
+{
+	-take (UNIQUE FIELD)
+
+	-for each record in LDAP...
+	{
+		-check if both tables' (UNIQUE FIELD) match
+		-if match...
+		{
+			-check other variables for exceptions
+			-if errors...
+			{
+				-grab all Exception Table's variables from Training
+				-add to Exceptions Array
+			}
+			-skip to next TRAINING record
+		}
+		-else, skip to next LDAP record
+	}
+}
