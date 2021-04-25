@@ -1,0 +1,75 @@
+#This Query file will fully build all 4 required tables for the program:
+
+#LDAP
+CREATE TABLE `t_temp_orait_ggc_ldap` (
+  `FIRST_NAME` varchar(50) DEFAULT NULL,
+  `LAST_NAME` varchar(50) DEFAULT NULL,
+  `PPID` varchar(50) DEFAULT NULL,
+  `EMAIL` varchar(200) DEFAULT NULL,
+  `NETID` varchar(50) DEFAULT NULL
+);
+
+#Training
+CREATE TABLE `t_temp_orait_ggc_training_export` (
+  `CEUS_EARNED` bigint DEFAULT NULL,
+  `COURSE_ID` varchar(50) DEFAULT NULL,
+  `COURSE_TITLE` varchar(200) DEFAULT NULL,
+  `DATE_COURSE_COMPLETED` varchar(50) DEFAULT NULL,
+  `EMAIL` varchar(200) DEFAULT NULL,
+  `EMPLOYEE_ID_NUMBER` varchar(100) DEFAULT NULL,
+  `EXAM_PASS_DATE` varchar(50) DEFAULT NULL,
+  `FIRST_NAME` varchar(200) DEFAULT NULL,
+  `LAST_NAME` varchar(200) DEFAULT NULL,
+  `MEMBER_ID` varchar(100) DEFAULT NULL,
+  `PASSING_SCORE` bigint DEFAULT NULL,
+  `PPID` varchar(40) DEFAULT NULL,
+  `REGISTRATION_DATE` varchar(50) DEFAULT NULL,
+  `USERNAME` varchar(200) DEFAULT NULL,
+  `AUTOLOGIN_ID` varchar(40) DEFAULT NULL,
+  `TRAINING_SOURCE` varchar(20) DEFAULT NULL,
+  `ACTIVE` tinyint(1) DEFAULT NULL,
+  `LAST_MOD_DATE` varchar(50) DEFAULT NULL,
+  `LAST_MOD_OPERATOR` varchar(100) DEFAULT NULL,
+  `LAST_MOD_ACTION` varchar(20) DEFAULT NULL,
+  `TRAINING_REC_ID` float DEFAULT NULL,
+  `TRAINING_TARGET` varchar(20) DEFAULT NULL,
+  `EXPIRATION_DATE` varchar(50) DEFAULT NULL
+);
+
+#Exception Table
+CREATE TABLE `exception_table` (
+  `URID` float NOT NULL,
+  `COURSE_ID` varchar(50) DEFAULT NULL,
+  `COURSE_TITLE` varchar(200) DEFAULT NULL,
+  `DATE_COURSE_COMPLETED` varchar(50) DEFAULT NULL,
+  `EMAIL` varchar(200) DEFAULT NULL,
+  `FIRST_NAME` varchar(50) DEFAULT NULL,
+  `LAST_NAME` varchar(50) DEFAULT NULL,
+  `MEMBER_ID` varchar(100) DEFAULT NULL,
+  `PPID` varchar(40) DEFAULT NULL,
+  `USERNAME` varchar(200) DEFAULT NULL,
+  `TRAINING_SOURCE` varchar(20) DEFAULT NULL,
+  `TRAINING_REC_ID` float DEFAULT NULL,
+  `EMPLOYEE_ID_NUMBER` varchar(100) DEFAULT NULL,
+  `Exception_Reason` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`URID`)
+);
+
+#Pass Table
+CREATE TABLE `pass_table` (
+  `URID` float NOT NULL,
+  `COURSE_ID` varchar(50) DEFAULT NULL,
+  `COURSE_TITLE` varchar(200) DEFAULT NULL,
+  `DATE_COURSE_COMPLETED` varchar(50) DEFAULT NULL,
+  `EMAIL` varchar(200) DEFAULT NULL,
+  `FIRST_NAME` varchar(50) DEFAULT NULL,
+  `LAST_NAME` varchar(50) DEFAULT NULL,
+  `MEMBER_ID` varchar(100) DEFAULT NULL,
+  `PPID` varchar(40) DEFAULT NULL,
+  `USERNAME` varchar(200) DEFAULT NULL,
+  `TRAINING_SOURCE` varchar(20) DEFAULT NULL,
+  `TRAINING_REC_ID` float DEFAULT NULL,
+  `EMPLOYEE_ID_NUMBER` varchar(100) DEFAULT NULL,
+  `Exception_Reason` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`URID`)
+);
